@@ -11,7 +11,7 @@ const PopularProductCard = ({ imgURL, name, price }) => {
   return (
     <>
       <div
-        className="flex flex-1 flex-col w-full max-sm:w-full"
+        className="flex flex-1 flex-col w-full max-sm:w-full hover:-translate-y-3"
         onClick={handleToShow}
       >
         <img src={imgURL} alt={name} className="w-[280px] h-[282px]" />
