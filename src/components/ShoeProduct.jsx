@@ -6,7 +6,7 @@ const ShoeProduct = ({ imgURL, name, price, handleToShow }) => {
       <div className="bg-white py-5 px-10 rounded-[40px] border-coral-red border-[3px]">
         <div className="flex justify-end">
           <h1
-            className="text-white font-bold text-[30px] bg-coral-red px-4 rounded-xl"
+            className="text-white font-bold text-[30px] bg-coral-red px-4 rounded-xl hover:bg-red-700"
             onClick={handleToShow}
           >
             X
