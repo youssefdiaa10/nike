@@ -1,7 +1,6 @@
 import { headerLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
-import { close } from "../assets/icons";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -25,11 +24,18 @@ const Navbar = () => {
           ))}
         </ul>
 
+        <div className="flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24">
+          <a href="/">Sign in</a>
+          <span>/</span>
+          <a href="/">Explore now</a>
+        </div>
+
         <div className="hidden max-lg:block fl">
           <img
-            src={toggle ? close : hamburger}
+            src={toggle ? "" : hamburger}
             alt="hamburger"
             className="w-[28px] h-[28px] object-contain"
+            onClick={() => setToggle((prev) => !prev)}
           />
         </div>
       </nav>
