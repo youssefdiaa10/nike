@@ -25,8 +25,12 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="hidden max-lg:block">
-          <img src={hamburger} alt="hamburger" width={28} height={28} />
+        <div className="hidden max-lg:block fl">
+          <img
+            src={toggle ? close : hamburger}
+            alt="hamburger"
+            className="w-[28px] h-[28px] object-contain"
+          />
         </div>
       </nav>
     </header>
