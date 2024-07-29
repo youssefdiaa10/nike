@@ -1,8 +1,11 @@
 import { headerLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
+import { close } from "../assets/icons";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   return (
     <header className="padding-x py-8 absolute z-10 w-full ">
       <nav className="flex justify-between items-center max-container">
@@ -21,8 +24,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
         <div className="hidden max-lg:block">
-          <img src={hamburger} alt="hamburger" width={25} height={25} />
+          <img src={hamburger} alt="hamburger" width={28} height={28} />
         </div>
       </nav>
     </header>
