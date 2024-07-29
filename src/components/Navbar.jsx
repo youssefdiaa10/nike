@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <div className="hidden max-lg:block fl">
           <img
-            src={toggle ? "" : hamburger}
+            src={hamburger}
             alt="hamburger"
             className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle((prev) => !prev)}
