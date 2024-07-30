@@ -5,10 +5,11 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  
+
   function handleToggle() {
     setToggle(!toggle);
   }
+
   return (
     <header className="padding-x py-8 absolute z-10 w-full ">
       <nav className="flex justify-between items-center max-container">
