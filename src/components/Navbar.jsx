@@ -39,12 +39,18 @@ const Navbar = () => {
         </div>
 
         <div className="hidden max-lg:block fl">
-          <img
-            src={hamburger}
-            alt="hamburger"
-            className="w-[28px] h-[28px] object-contain"
-            onClick={handleToggle}
-          />
+          {toggle ? (
+            <h1 className="text-[20px] font-bold" onClick={handleToggle}>
+              x
+            </h1>
+          ) : (
+            <img
+              src={hamburger}
+              alt="hamburger"
+              className="w-[28px] h-[28px] object-contain"
+              onClick={handleToggle}
+            />
+          )}
           <div
             className={`${
               toggle ? "flex" : "hidden"
